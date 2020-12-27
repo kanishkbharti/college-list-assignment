@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Bangers&family=Barlow+Semi+Condensed:wght@100&display=swap");
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 27px;
+}
+
+.image_container {
+  background-image: linear-gradient(rgba(27, 23, 23, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 180px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45vw;
+  height: 55vh;
+  position: relative;
+  transition: 0.3s;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.one {
+  display: flex;
+  justify-content: flex-end;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: orange;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: #2b3139;
+  font-family: cursive;
+  margin: 10px;
+}
+.rating_num {
+  font-size: 22px;
+  font-weight: 800;
+}
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+.tags {
+  display: flex;
+}
+.tag1,
+.tag2 {
+  background-color: gainsboro;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #2b3139;
+  margin: 2px;
+}
+.rank_text {
+  color: whitesmoke;
+  font-weight: 800;
+  font-family: Arimo;
+}
+.show {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tag_show {
+  background-color: #22cc7e;
+  padding: 5px;
+  width: 50%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  left: 0;
+  font-family: monospace;
+  color: #e8dea5;
+}
+
+.wifi {
+  margin-right: 5px;
+  color: #53e0bc;
+  font-weight: 900;
+  right: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.image {
+  width: 30px;
+}
+.last_price {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: gray;
+}
+.rate_container {
+  color: #b73427;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+}
+.name {
+  font-family: Bangers;
+  font-size: 20px;
+}
+.address {
+  font-family: Arimo;
+  font-size: 12px;
+}
+.address_dis {
+  color: grey;
+  margin-left: 2px;
+}
+.match {
+  color: #22cc7e;
+  font-weight: bold;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #0c98e2;
+  margin: 2px;
+}
+.pointer {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background: #22a2af;
+  text-align: center;
+  top: -15px;
+  right: 0;
+  color: whitesmoke;
+  font-family: cursive;
+  padding: 2px;
+}
+.pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  .rate_container {
+    font-size: 15px;
+  }
+  .card {
+    height: 450px;
+  }
+
+  .tag1,
+  .tag2 {
+    padding: 4px;
+    border-radius: 20px;
+    font-size: 10px;
+    color: #2b3139;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+  }
+  .two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .rank_text {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .show {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+  }
+  .wifi {
+    margin: 10px;
+  }
+  .tag_show {
+    width: 80%;
+  }
+}
